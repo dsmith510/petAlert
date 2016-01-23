@@ -7,16 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h> // Import Framework
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+           
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+// Register app with the service
+    
+    [Parse setApplicationId:@"IE43k5SO6Q5T9BcXGY4b6IqnmgeI7TcV2Ck0NqXV" clientKey:@"i6g1Ru8VLJuNQ8RyyxoDsyLC088nQILz8NXaV3eR"];
+    
     return YES;
 }
 
